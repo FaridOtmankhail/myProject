@@ -1,0 +1,299 @@
+:root{
+    --ubereat: #F4B30B;
+    --lieferando: #F9883A;
+    --wolt:#397FA6;
+}
+
+
+body{
+    margin: 0 auto;
+    width: 90%;
+    background-color: #8DAFD7;
+    justify-content: center;
+    background-image: url(./dan-gold-4_jhDO54BYg-unsplash.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.subnav{
+    display: block;
+
+}
+.title{
+    padding: 10px;
+    width: 500px;
+    height: 70px;
+    background-color: #B0DEBD;
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    
+    font-size: 32px;
+    margin: 20px;
+    border-radius: 20px 20px 0 0;
+   
+}
+
+.box_2{
+    display: none;
+}
+.box_3{
+    display: none;
+}
+
+@media(min-width: 780px){
+    .title{
+        width: 500px;
+    }
+    
+ }
+@media(min-width: 1280px) {
+    .title{
+       min-width: 1040px;
+        height: 70px;
+        /* padding: 30px; */
+        font-size: 40px;
+        margin-top: 50px;
+       }
+   .box_2{
+    display: inline-block;
+    }
+}
+
+@media(min-width: 1580px){
+    .box_3{
+        display: inline-block;
+        
+    }
+    .title{
+       min-width: 1580px;
+    }
+}
+
+.box_title{
+    width: 500px;
+    height: 20px;
+    padding: 15px 10px;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    box-shadow: 0 0 25px white;
+}
+.box_title1{
+    background-color: var(--lieferando);}
+.box_title2{
+        background-color: var(--ubereat);}
+.box_title3{
+    background-color: var(--wolt);}
+.food_company{
+    width: 500px;
+    height: 20px;
+    position: absolute;
+    /* top: 0; */
+    bottom: 0px;
+    display: block;
+    font-size: 32px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.liefrandoImage{
+   height: 35px;
+   width: auto;
+   position: relative;
+   left: 135px;
+   bottom: 12px;
+}
+
+.box{
+    background-color: var(--lieferando);
+    width: 500px;
+    height: 350px;
+    /* border: 1px solid black; */
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    position: relative;
+    padding: 10px;
+    box-shadow: 0 0 25px white;
+    
+}
+.box-1{
+    background-color: var(--lieferando);
+}
+.box-2{
+    background-color: var(--ubereat);
+}
+.box-3{
+    background-color: var(--wolt);
+
+}
+.resturant_name{
+    font-size: 24px;
+    padding: 10px;
+    position: absolute;
+    bottom: 110px;
+}
+.background_image{
+    height: 180px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin: 20px 0;
+    position: absolute;
+    bottom: 170px;
+    left: 0;
+ 
+  }
+  .food_image{
+      background-image: url(./AdobeStock_64216967-scaled.jpeg);  
+  }
+  .pizzaVerde{
+    background-image: url(./eaters-collective-12eHC6FxPyg-unsplash.jpg);
+}
+.pizzaDeliciosa{
+    background-image: url(./ivan-torres-MQUqbmszGGM-unsplash.jpg);
+}
+button{
+  font-size: 28px;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 10px;
+  left: 130px;
+  justify-content: center;
+  width: 240px;
+  height: 55px;
+  color: white;
+  box-shadow: 0 0 15px black;
+
+}
+.liefrando-btn{
+    background-color: black;
+}
+.liefrando-btn a{
+    color: white;
+}
+.Uber-Eatbtn{
+    background-color: #125FCA;
+    color: white;
+}
+.Uber-Eatbtn a{
+    color: white;
+}
+.wolt-btn{
+    background-color: #D9D9D9;
+    color: black;
+}
+.wolt-btn a{
+    color: black;
+}
+a{
+    text-decoration: none;
+    display: block;
+
+}
+
+
+.details1{
+    display: flex-end;
+    position: absolute;
+    bottom: 100px;
+    left: 22px;
+}
+.details{
+    display: flex-end;
+    position: absolute;
+    bottom: 55px;
+    left: 10px;
+    display: inline-block;
+    justify-content: space-between;
+}
+span{
+    display: inline-block;
+    padding: 5px;
+    margin-right: 5px;
+    position: relative;
+    left: 5px;
+
+
+}
+
+.icons-color{
+    color: rgba(10, 9, 9, 0.5);
+}
+
+.uber-eat{
+    background-color: #F4B30B;
+}
+.liefrenado{
+    background-color: var(--lieferando);
+
+}
+.wolt-title{
+    background-color: var(--wolt);
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    margin-left: 10px;
+}
+.lieferando-boxes{
+    position: relative;
+    margin: 10px;
+    left: 0px;
+    /* justify-content: space-between; */
+
+
+}
+.sections{
+    /* justify-content: space-between ; */
+    display: flex;
+
+
+}
+.label.hamburg { 
+    display: block;
+    background: #555; width: 75px; height: 50px; 
+    position: relative; 
+    margin-left: auto; margin-right: auto;
+    border-radius: 4px; 
+ }
+ input#hamburg not:checked {
+     display:none
+    }
+    .line { 
+        position: absolute; 
+        left:2px;
+        height: 20px; width: 65px; 
+        background: #fff; border-radius: 2px;
+        display: block; 
+        transition: 0.5s; 
+        transform-origin: center; 
+     }
+     
+     .line:nth-child(1) { top: 12px; }
+     .line:nth-child(2) { top: 24px; }
+     .line:nth-child(3) { top: 36px; }
+     
+     #hamburg:checked + .hamburg .line:nth-child(1){
+        transform: translateY(12px) rotate(-45deg);
+     }
+     
+     #hamburg:checked + .hamburg .line:nth-child(2){
+    
+        opacity:0;
+        display: block;
+        
+     }
+     
+     #hamburg:checked + .hamburg .line:nth-child(3){
+        transform: translateY(-12px) rotate(45deg);
+     }
