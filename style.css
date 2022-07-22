@@ -11,7 +11,7 @@ body{
     background-color: #8DAFD7;
     justify-content: center;
     background-image: url(./dan-gold-4_jhDO54BYg-unsplash.jpg);
-
+    /* opacity: 0.5; */
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -22,18 +22,64 @@ body{
 
 }
 .title{
-    padding: 10px;
-    width: 500px;
+ 
+    width: 520px;
     height: 70px;
     background-color: #B0DEBD;
     text-align: center;
     position: relative;
-    margin-top: 30px;
-    
-    font-size: 32px;
+    font-size: 24px;
     margin: 20px;
     border-radius: 20px 20px 0 0;
+    justify-content: space-between;
+    display: flex;
    
+}
+h1{
+    position: relative;
+    top: 0;
+    left: 5px;
+    font-size: 28px;
+    padding-left: 10px;
+}
+.search-bar{
+    width: 45%;
+    position: relative;
+    right: 0;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-right: 0;
+   justify-content: space-between;
+}
+.search-form{
+  position: absolute;
+  right: 5px;
+  width: 230px;
+  height: auto;
+
+}
+.search-item{
+    width: 130px;
+    height: 39px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    margin-right: 5px;
+    border-radius: 10px 0 0 10px;
+
+}
+
+.searchBtn{
+    width: 60px;
+    height: 45px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 10px;
+    font-size: 14px;
+    margin-left: 18px; 
+    border-radius: 0 10px 10px 0;
+    box-shadow: none;
 }
 
 .box_2{
@@ -45,20 +91,22 @@ body{
 
 @media(min-width: 780px){
     .title{
-        width: 500px;
+        width: 520px;
     }
     
  }
 @media(min-width: 1280px) {
     .title{
-       min-width: 1040px;
-        height: 70px;
-        /* padding: 30px; */
-        font-size: 40px;
+       min-width: 1055px;
+        height: 80px;
         margin-top: 50px;
        }
    .box_2{
     display: inline-block;
+    }
+    h1{
+      
+        font-size: 32px;
     }
 }
 
@@ -68,7 +116,7 @@ body{
         
     }
     .title{
-       min-width: 1580px;
+       min-width: 1600px;
     }
 }
 
@@ -133,6 +181,7 @@ body{
     background-color: var(--wolt);
 
 }
+
 .resturant_name{
     font-size: 24px;
     padding: 10px;
@@ -151,14 +200,32 @@ body{
     left: 0;
  
   }
+  .mehak_indi{
+      background-image: url(./istockphoto-177043240-612x612.webp)
+  }
   .food_image{
-      background-image: url(./AdobeStock_64216967-scaled.jpeg);  
+      background-image: url(./mehdi-pezhvak-nKjBbzQOI60-unsplash.jpg);  
   }
   .pizzaVerde{
-    background-image: url(./eaters-collective-12eHC6FxPyg-unsplash.jpg);
+    background-image: url(./nicholas-grande-d9jcPTRD9fo-unsplash.jpg);
 }
 .pizzaDeliciosa{
     background-image: url(./ivan-torres-MQUqbmszGGM-unsplash.jpg);
+}
+.sushi_royal{
+    background-image: url(./vinicius-benedit--1GEAA8q3wk-unsplash.jpg);
+}
+.parga_max{
+    background-image: url(./suad-kamardeen-3lnsCAQm23U-unsplash.jpg);
+}
+.turkitch_kofte{
+    background-image: url(./istockphoto-1210416394-170667a.jpeg);
+}
+.marmar_kebap{
+    background-image: url(./engin-akyurt-SA1Ni6jSImk-unsplash.jpg);
+}
+.healthy_kitchen{
+    background-image: url(./anh-nguyen-kcA-c3f_3FE-unsplash.jpg);
 }
 button{
   font-size: 28px;
@@ -259,41 +326,51 @@ section{
 
 
 }
-.label.hamburg { 
+footer{
+    background: white;
+    width: 500px;
+    height:140px;
+    font-size: 18px;
+    border-radius: 20px;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    padding: 10px;
     display: block;
-    background: #555; width: 75px; height: 50px; 
-    position: relative; 
-    margin-left: auto; margin-right: auto;
-    border-radius: 4px; 
- }
- input#hamburg not:checked {
-     display:none
-    }
-    .line { 
-        position: absolute; 
-        left:2px;
-        height: 20px; width: 65px; 
-        background: #fff; border-radius: 2px;
-        display: block; 
-        transition: 0.5s; 
-        transform-origin: center; 
-     }
-     
-     .line:nth-child(1) { top: 12px; }
-     .line:nth-child(2) { top: 24px; }
-     .line:nth-child(3) { top: 36px; }
-     
-     #hamburg:checked + .hamburg .line:nth-child(1){
-        transform: translateY(12px) rotate(-45deg);
-     }
-     
-     #hamburg:checked + .hamburg .line:nth-child(2){
     
-        opacity:0;
-        display: block;
-        
-     }
+ 
+    }
+.footer{
+    width: 100%;
+    height: 50;
+    align-items: center;
+    text-align: center;
+
+}
+@media(min-width: 1280px) {
+    footer{
+        width: 1040px;
+        font-size: 24px;
+        justify-content: space-between;
      
-     #hamburg:checked + .hamburg .line:nth-child(3){
-        transform: translateY(-12px) rotate(45deg);
-     }
+    }
+    .footer{
+        width: 30%;
+        display: inline-block;
+        height: 60px;
+    }
+}
+
+@media(min-width: 1580px){
+    footer{
+        width: 1580px;
+        font-size: 24px;
+        justify-content: space-between;
+        height: 60px;
+       
+    }
+    .footer{
+        width: 30%;
+        display: inline-block;
+    }
+}
